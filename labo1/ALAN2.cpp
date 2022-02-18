@@ -1,21 +1,15 @@
-//    ENRICO PEZZANO  S4825087
-//    MATTEO MANNAI    S4823690
-//    MARIO SGUARIO    S4841630
+//  ENRICO PEZZANO  S4825087
+//	MATTEO MANNAI	S4823690
+//	MARIO SGUARIO	S4841630
 
 #include <iostream>
 #include <cmath>
-#include <math.h>
+// #include <math.h>  //serve?
 using namespace std;
 
 double factorial(double);
-
 void Alg1();
 void Alg2();
-
-
-
-
-
 
 int main()
 {
@@ -27,12 +21,10 @@ int main()
 }
 
 double factorial(double n){
-    if(n == 1)
+    if(n == 1) 
         return 1;
     return n * factorial(n-1);
 }
-
-
 
 void Alg1(){
     double N[5] = {3,10,50,100,150};
@@ -52,15 +44,12 @@ void Alg1(){
             
             espo =exp(x[i]);
             cout<<"Per N="<<N[j]<<" -> Fn(0)="<<som<<endl;
-           
         }
         
         cout<<" \n F di x ="<<espo<<endl;
         cout<<endl;
     }
-    
 }
-
 
 void Alg2(){
     double N[5] = {3,10,50,100,150};
@@ -85,5 +74,4 @@ void Alg2(){
         cout<<" \n F di x ="<<1/espo<<endl;
         cout<<endl;
     }
-    
 }
