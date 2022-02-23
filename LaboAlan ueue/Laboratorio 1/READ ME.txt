@@ -1,0 +1,4 @@
+Come compilare:
+Esercizio 1: g++ esercizio1.cpp
+Esercizio 2: g++ esercizio2.cpp
+Esercizio 3: g++ esercizio3.cpp
