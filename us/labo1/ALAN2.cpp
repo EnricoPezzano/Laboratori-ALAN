@@ -3,8 +3,18 @@
 //	MARIO SGUARIO	 S4841630
 
 #include <iostream>
-#include <cmath>
+#include <math.h>
 using namespace std;
+/*
+Fissato l’intero positivo N, implementare un programma che permetta di calcolare fN(x) per il punto x e il grado N dati in input.
+Considerare i due algoritmi seguenti per i valori descritti dei parametri x e N, confrontando i risultati ottenuti per fN (x) con i valori restituiti per f (x) dalla funzione exp
+   della libreria ANSI math.h, tramite errore relativo e assoluto.
+- Algoritmo 1: determinare un’approssimazione di f(x) per il punto x = 0.5 ed il punto x = 30, valutando fN (x) per N = 3, 10, 50, 100, 150. Ripetere l’esercizio considerando il 
+   punto x = −0.5 ed il punto x = −30.
+- Algoritmo 2: Osservando che per l’esponenziale vale f (−x) = 1/f (x) e quindi f (−x) ≈ 1/fN (x), de- terminare una diversa approssimazione di f(−0.5) e f(−30) nel modo seguente: 
+   valutare fN(+0.5) e fN (+30) per N = 3, 10, 50, 100, 150 e, successivamente, calcolarne il reciproco.
+*/
+
 
 double factorial(double n){
    if(n == 1) return 1;
