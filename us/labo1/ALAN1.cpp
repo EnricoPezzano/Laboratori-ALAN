@@ -8,55 +8,41 @@ using namespace std;
 
 int main ()
 {
-  //Enrico è il primo membro del gruppo: le ultime due cifre del suo numero di matricola sono rispettivamente:
-  double d0 = 7;
-  double d1 = 8;
+   //Enrico è il primo membro del gruppo: le ultime due cifre del suo numero di matricola sono rispettivamente:
+   double d0 = 7;
+   double d1 = 8;
 
-  //Assegnamo alle variabili i loro valori per quanto possibile
-  double a = d0+1;
-  for(int i=0; i<=6; i++)
-    a *= pow(10,i);
-  double b = (d1+1) * pow(10,20);
-  double c = -b;
+   //Assegnamo alle variabili i loro valori per quanto possibile
+   double a = d0+1;
+   double b = (d1+1) * pow(10,20);
+   double c = -b;
 
-  double abs_err1, abs_err2, rel_err1, rel_err2;
-  abs_err1 = abs_err2 = rel_err1 = rel_err2 = 0;
+   double abs_err1, abs_err2, rel_err1, rel_err2;
+   abs_err1 = abs_err2 = rel_err1 = rel_err2 = 0;
 
-  // Iteriamo su i e svolgiamo i calcoli, per ogni valore:
-  for (int i = 0; i <= 6; ++i) {
-    a = d0+1;                           
-    a = a * pow(10,i);
+   // Iteriamo su i e svolgiamo i calcoli, per ogni valore:
+   for (int i = 0; i <= 6; ++i) {
+      a = (d0+1) * pow(10,i);
 
-    cout << "i = " << i << "\n";
-    cout << "a = " << a << "\n";
-    cout << "b = " << b << "\n";
-    cout << "c = " << c << "\n";
+      cout << "Iterazione n° " << i << "\n"<<"a = " << a << "\n"<< "b = " << b << "\n"<< "c = " << c << "\n\n";
 
-    cout << endl;
+      //calcolo errori assoluti
+      abs_err1 = fabs(((a+b)+c)-a);
+      abs_err2 = fabs(((a+b)+c)-a);
 
-    double sum1 = (a + b) + c;
-    double sum2 = a + (b + c);
-    
-    //calcolo errore assoluto
-    abs_err1 = fabs(sum1-a);
-    abs_err2 = fabs(sum2-a);
+      //calcolo errori relativi
+      rel_err1 = abs_err1/a;
+      rel_err2 = abs_err2/a;
 
-    //calcolo errore relativo
-    rel_err1 = abs_err1/a;
-    rel_err2 = abs_err2/a;
+      cout << "(a+b)+c = " << (a+b)+c << "\n";
+      cout << "a+(b+c) = " << a+(b+c) << "\n\n";
 
-    //uso setprecision() per visualizzare il numero intero
-    cout << setprecision(22) << "(a + b) + c = " << sum1 << "\n";
-    cout << "erorre assoluto (a + b) + c ->" << abs_err1 << endl;
-    cout << "erorre relativo (a + b) + c ->" << rel_err1 << endl;
+      cout << "erorre assoluto (a + b) + c -> " << abs_err1 <<  "\n";
+      cout << "erorre relativo (a + b) + c -> " << rel_err1 << "\n\n";
 
-    cout << endl;
+      cout << "erorre assoluto a + (b + c) -> " << abs_err2 <<  "\n";
+      cout << "erorre relativo a + (b + c) -> " << rel_err2 <<  "\n";
 
-    cout << setprecision(22) << "a + (b + c) = " << sum2 << "\n";
-    cout << "erorre assoluto a + (b + c) ->" << abs_err2 << endl;
-    cout << "erorre relativo a + (b + c) ->" << rel_err2 << endl;
-
-    cout << endl;
-    cout << endl;
-  }
+   }
+   return 0;
 }
