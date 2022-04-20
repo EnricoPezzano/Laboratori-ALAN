@@ -1,8 +1,7 @@
-//  ENRICO PEZZANO  S4825087
-//	MATTEO MANNAI	S4823690
-//	MARIO SGUARIO	S4841630
+//  ENRICO PEZZANO S4825087
+//	MATTEO MANNAI	 S4823690
+//	MARIO SGUARIO	 S4841630
 
-// #include <iomanip>  //serve?
 #include <cmath>
 #include <iostream>
 using namespace std;
@@ -10,24 +9,23 @@ using namespace std;
 int main ()
 {
   //Enrico è il primo membro del gruppo: le ultime due cifre del suo numero di matricola sono rispettivamente:
-	double d0 = 7;
-	double d1 = 8;
+  double d0 = 7;
+  double d1 = 8;
 
   //Assegnamo alle variabili i loro valori per quanto possibile
-	double a = d0+1;
-	double b = (d1+1) * pow(10,20);
-	double c = -b;
+  double a = d0+1;
+  for(int i=0; i<=6; i++)
+    a *= pow(10,i);
+  double b = (d1+1) * pow(10,20);
+  double c = -b;
 
-  double abs_err1 = 0;
-  double abs_err2 = 0;
-  double rel_err1 = 0;
-  double rel_err2 = 0;
+  double abs_err1, abs_err2, rel_err1, rel_err2;
+  abs_err1 = abs_err2 = rel_err1 = rel_err2 = 0;
 
   // Iteriamo su i e svolgiamo i calcoli, per ogni valore:
-	for (int i = 0; i <= 6; ++i) {
-    //calcolo a ad ogni ciclo
+  for (int i = 0; i <= 6; ++i) {
     a = d0+1;                           
-		a = a * pow(10,i);
+    a = a * pow(10,i);
 
     cout << "i = " << i << "\n";
     cout << "a = " << a << "\n";
@@ -60,5 +58,5 @@ int main ()
 
     cout << endl;
     cout << endl;
-	}
+  }
 }
