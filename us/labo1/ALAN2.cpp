@@ -15,15 +15,23 @@ Considerare i due algoritmi seguenti per i valori descritti dei parametri x e N,
    valutare fN(+0.5) e fN (+30) per N = 3, 10, 50, 100, 150 e, successivamente, calcolarne il reciproco.
 */
 
+double N[5] = {3,10,50,100,150};
 
-double factorial(double n){
+double my_factorial(double n){
    if(n == 1) return 1;
+   return n * my_factorial(n-1);
+}
 
-   return n * factorial(n-1);
+double my_taylor(double x, double n){
+   if(n == 0)
+      return 1;
+	if(n == 1)
+      return x+1;
+
+	return my_taylor(x,n-1) + (pow(x,n)/my_factorial(n));
 }
 
 void Alg1(){
-   double N[5] = {3,10,50,100,150};
    double x[4] = {0.5,30,-0.5,-30};
    double fun, som, espo;
    cout<<endl;
@@ -31,7 +39,7 @@ void Alg1(){
       cout<<"Il punto x="<<x[i]<<"\n\n";
       for(int j=0; j<5; j++){
          for(int n=1; n<N[j]; n++){
-            fun=pow(x[i],n) / factorial(n);
+            fun=pow(x[i],n) / my_factorial(n);
             som+=fun;
          }
 
@@ -45,7 +53,6 @@ void Alg1(){
 }
 
 void Alg2(){
-   double N[5] = {3,10,50,100,150};
    double x[2] = {0.5,30};
    double fun, som, espo;
    cout<<endl;
@@ -53,7 +60,7 @@ void Alg2(){
       cout<<"Il punto x="<<x[i]<<"\n\n";
       for(int j=0; j<5; j++){
          for(int n=1; n<N[j]; n++){
-            fun=pow(x[i],n) / factorial(n);
+            fun=pow(x[i],n) / my_factorial(n);
             som+=fun;
          }
          espo =exp(x[i]);
