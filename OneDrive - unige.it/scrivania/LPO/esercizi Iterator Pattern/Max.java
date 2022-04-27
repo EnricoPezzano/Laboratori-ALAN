@@ -16,6 +16,7 @@ public class Max{
         if(col.isEmpty()) // se col==nul lancia NullPointerException
             return null;
         var it = col.iterator(); // tipo inferenza Iterator<Integer>
+                                 // https://docs.oracle.com/javase/tutorial/java/generics/genTypeInference.html
         int max = it.next(); // unboxing implicito, lascia NullPointerException se it.next è null
         while(it.hasNext()){
             int i = it.next(); // unboxing implicito, lascia NullPointerException se it.next è null

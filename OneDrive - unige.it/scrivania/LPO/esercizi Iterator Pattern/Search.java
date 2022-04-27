@@ -2,13 +2,14 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Objects;
 
 public class Search{
 
     public static <E> int search(E e, List<E> ls){
         int res = 0; // va bene, ma var sarebbe stato leggermente meglio
-        for(E el : ls){
-            if(Object.equals(el,e)) // if(el == e)
+        for(var el : ls){ // var è meglio di tipo var, non E
+            if(Objects.equals(el,e)) // if(el == e)
                 return res;
             res++;
         }
