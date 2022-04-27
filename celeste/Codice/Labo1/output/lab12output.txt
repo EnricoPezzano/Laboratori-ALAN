@@ -1,0 +1,280 @@
+
+--------------------------------
+
+x= 0.5
+N= 3
+
+Algoritmo 1:
+valore fN(x):    1.64583
+valore exp(x):   1.64872
+errore assoluto: -0.00288794
+errore relativo: -0.00175162
+
+--------------------------------
+
+x= 0.5
+N= 10
+
+Algoritmo 1:
+valore fN(x):    1.64872
+valore exp(x):   1.64872
+errore assoluto: -1.27627e-11
+errore relativo: -7.74096e-12
+
+--------------------------------
+
+x= 0.5
+N= 50
+
+Algoritmo 1:
+valore fN(x):    1.64872
+valore exp(x):   1.64872
+errore assoluto: -4.44089e-16
+errore relativo: -2.69354e-16
+
+--------------------------------
+
+x= 0.5
+N= 100
+
+Algoritmo 1:
+valore fN(x):    1.64872
+valore exp(x):   1.64872
+errore assoluto: -4.44089e-16
+errore relativo: -2.69354e-16
+
+--------------------------------
+
+x= 0.5
+N= 150
+
+Algoritmo 1:
+valore fN(x):    1.64872
+valore exp(x):   1.64872
+errore assoluto: -4.44089e-16
+errore relativo: -2.69354e-16
+
+--------------------------------
+
+x= 30
+N= 3
+
+Algoritmo 1:
+valore fN(x):    4981
+valore exp(x):   1.06865e+13
+errore assoluto: -1.06865e+13
+errore relativo: -1
+
+--------------------------------
+
+x= 30
+N= 10
+
+Algoritmo 1:
+valore fN(x):    2.3883e+08
+valore exp(x):   1.06865e+13
+errore assoluto: -1.06862e+13
+errore relativo: -0.999978
+
+--------------------------------
+
+x= 30
+N= 50
+
+Algoritmo 1:
+valore fN(x):    1.06833e+13
+valore exp(x):   1.06865e+13
+errore assoluto: -3.18471e+09
+errore relativo: -0.000298013
+
+--------------------------------
+
+x= 30
+N= 100
+
+Algoritmo 1:
+valore fN(x):    1.06865e+13
+valore exp(x):   1.06865e+13
+errore assoluto: 0.00390625
+errore relativo: 3.65532e-16
+
+--------------------------------
+
+x= 30
+N= 150
+
+Algoritmo 1:
+valore fN(x):    1.06865e+13
+valore exp(x):   1.06865e+13
+errore assoluto: 0.00390625
+errore relativo: 3.65532e-16
+
+--------------------------------
+
+x= -0.5
+N= 3
+
+Algoritmo 1:
+valore fN(x):    0.604167
+valore exp(x):   0.606531
+errore assoluto: -0.00236399
+errore relativo: -0.00389757
+
+Algoritmo 2:
+valore 1/fN(-x): 0.607595
+valore exp(x):   0.606531
+errore assoluto: 0.00106428
+errore relativo: 0.0017547
+
+--------------------------------
+
+x= -0.5
+N= 10
+
+Algoritmo 1:
+valore fN(x):    0.606531
+valore exp(x):   0.606531
+errore assoluto: 1.17416e-11
+errore relativo: 1.93586e-11
+
+Algoritmo 2:
+valore 1/fN(-x): 0.606531
+valore exp(x):   0.606531
+errore assoluto: 4.69513e-12
+errore relativo: 7.74097e-12
+
+--------------------------------
+
+x= -0.5
+N= 50
+
+Algoritmo 1:
+valore fN(x):    0.606531
+valore exp(x):   0.606531
+errore assoluto: -1.11022e-16
+errore relativo: -1.83045e-16
+
+Algoritmo 2:
+valore 1/fN(-x): 0.606531
+valore exp(x):   0.606531
+errore assoluto: 1.11022e-16
+errore relativo: 1.83045e-16
+
+--------------------------------
+
+x= -0.5
+N= 100
+
+Algoritmo 1:
+valore fN(x):    0.606531
+valore exp(x):   0.606531
+errore assoluto: -1.11022e-16
+errore relativo: -1.83045e-16
+
+Algoritmo 2:
+valore 1/fN(-x): 0.606531
+valore exp(x):   0.606531
+errore assoluto: 1.11022e-16
+errore relativo: 1.83045e-16
+
+--------------------------------
+
+x= -0.5
+N= 150
+
+Algoritmo 1:
+valore fN(x):    0.606531
+valore exp(x):   0.606531
+errore assoluto: -1.11022e-16
+errore relativo: -1.83045e-16
+
+Algoritmo 2:
+valore 1/fN(-x): 0.606531
+valore exp(x):   0.606531
+errore assoluto: 1.11022e-16
+errore relativo: 1.83045e-16
+
+--------------------------------
+
+x= -30
+N= 3
+
+Algoritmo 1:
+valore fN(x):    -4079
+valore exp(x):   9.35762e-14
+errore assoluto: -4079
+errore relativo: -4.35901e+16
+
+Algoritmo 2:
+valore 1/fN(-x): 0.000200763
+valore exp(x):   9.35762e-14
+errore assoluto: 0.000200763
+errore relativo: 2.14545e+09
+
+--------------------------------
+
+x= -30
+N= 10
+
+Algoritmo 1:
+valore fN(x):    1.21255e+08
+valore exp(x):   9.35762e-14
+errore assoluto: 1.21255e+08
+errore relativo: 1.29579e+21
+
+Algoritmo 2:
+valore 1/fN(-x): 4.18709e-09
+valore exp(x):   9.35762e-14
+errore assoluto: 4.18699e-09
+errore relativo: 44744.2
+
+--------------------------------
+
+x= -30
+N= 50
+
+Algoritmo 1:
+valore fN(x):    8.78229e+08
+valore exp(x):   9.35762e-14
+errore assoluto: 8.78229e+08
+errore relativo: 9.38517e+21
+
+Algoritmo 2:
+valore 1/fN(-x): 9.36041e-14
+valore exp(x):   9.35762e-14
+errore assoluto: 2.78952e-17
+errore relativo: 0.000298102
+
+--------------------------------
+
+x= -30
+N= 100
+
+Algoritmo 1:
+valore fN(x):    -4.82085e-06
+valore exp(x):   9.35762e-14
+errore assoluto: -4.82085e-06
+errore relativo: -5.15179e+07
+
+Algoritmo 2:
+valore 1/fN(-x): 9.35762e-14
+valore exp(x):   9.35762e-14
+errore assoluto: -3.78653e-29
+errore relativo: -4.04647e-16
+
+--------------------------------
+
+x= -30
+N= 150
+
+Algoritmo 1:
+valore fN(x):    -4.82086e-06
+valore exp(x):   9.35762e-14
+errore assoluto: -4.82086e-06
+errore relativo: -5.1518e+07
+
+Algoritmo 2:
+valore 1/fN(-x): 9.35762e-14
+valore exp(x):   9.35762e-14
+errore assoluto: -3.78653e-29
+errore relativo: -4.04647e-16

@@ -1,0 +1,2 @@
+Come compilare:
+Usare il comando "make" per compilare il laboratorio. Il nome dell'eseguibile è "Laboratorio2".

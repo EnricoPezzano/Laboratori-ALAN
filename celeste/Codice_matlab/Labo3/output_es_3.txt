@@ -1,0 +1,65 @@
+>> Esercizio_3
+
+A =
+
+     1    -1     2
+    -2     0     5
+     6    -3     6
+
+Applichiamo il metodo delle potenze con  (1, 1, 1)' 
+
+y =
+
+    0.2033
+    0.6505
+    0.7318
+
+
+lambda1 =
+
+    5.0000
+
+
+i =
+
+    46
+
+Applichiamo il metodo delle potenze con (3, 10, 4)' 
+
+y =
+
+    0.1374
+    0.8242
+    0.5494
+
+
+lambda2 =
+
+    3.0000
+
+
+i =
+
+    23
+
+Applichiamo il metodo delle potenze inverse con p=4
+
+lambda3 =
+
+    4.0604
+
+
+i =
+
+        1001
+
+Applichiamo il metodo delle potenze inverse con p=4.5
+
+lambda4 =
+
+    5.0000
+
+
+i =
+
+    54
